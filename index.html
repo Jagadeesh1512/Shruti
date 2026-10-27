@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lovey 💕 — Your Adorable AI Companion</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>" />
+
+  <!-- Google Fonts: Poppins & Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       SCREEN 1 — WELCOME (Pixel-Perfect Match with Picture 2)
+       ============================================================ -->
+  <section id="screen-welcome" class="screen" style="display:flex; opacity:1;">
+
+    <!-- Ambient blurred background for ultra-wide displays -->
+    <div class="welcome-ambient-bg" aria-hidden="true"></div>
+
+    <!-- Centered Stage Container matching 2nd Image Aspect Ratio -->
+    <div class="welcome-stage">
+      <div class="welcome-inner">
+        <!-- Master Graphic (Enhanced 4K Panoramic Image: Gemini_Generated_Image_x0r3jtx0r3jtx0r3-Picsart-AiImageEnhancer) -->
+        <img src="intro_widescreen_4k.jpg" srcset="intro_widescreen.jpg 2560w, intro_widescreen_4k.jpg 4096w" sizes="100vw" alt="Shruti - Your AI Companion" class="welcome-master-img" />
+
+        <!-- Form Overlay Mapped Exactly to the Card's Input and Button -->
+        <form id="name-form" autocomplete="off">
+          <div class="name-input-overlay">
+            <input
+              id="name-input"
+              type="text"
+              placeholder="Type your name here..."
+              maxlength="30"
+              autocomplete="off"
+              spellcheck="false"
+              aria-label="Your name"
+            />
+          </div>
+
+          <div class="name-btn-overlay">
+            <button
+              id="name-btn"
+              type="submit"
+              class="lets-chat-btn shimmer-btn"
+              aria-label="Let's chat"
+            >
+              Let's Chat 💓
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- ============================================================
+       SCREEN 2 — CHAT (Exact Glowing Purple-Magenta Gradient & Floating Hearts)
+       ============================================================ -->
+  <section id="screen-chat" class="screen" style="display:none; opacity:0;">
+
+    <!-- Glowing Gradient & Floating Elements Background -->
+    <div class="chat-bg-gradient" aria-hidden="true">
+      <div class="floating-bokeh-layer">
+        <div class="bokeh-heart h1">♥</div>
+        <div class="bokeh-heart h2">♥</div>
+        <div class="bokeh-heart h3">♥</div>
+        <div class="bokeh-heart h4">♥</div>
+        <div class="bokeh-heart h5">♥</div>
+        <div class="bokeh-heart h6">♥</div>
+        <div class="bokeh-heart h7">♥</div>
+
+        <div class="star-sparkle s1">✦</div>
+        <div class="star-sparkle s2">✦</div>
+        <div class="star-sparkle s3">✦</div>
+        <div class="star-sparkle s4">✦</div>
+        <div class="star-sparkle s5">✦</div>
+      </div>
+      <div id="chat-drifting-particles" class="drifting-particles-container"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="chat-header" id="chat-header">
+      <div class="chat-header-center" id="chat-header-center">
+        <h2 class="chat-bot-name" id="chat-bot-name">
+          <svg class="header-heart heart-left" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <svg class="shruti-exact-svg" viewBox="140 10 320 125" role="img" aria-label="Shruti">
+            <path fill-rule="evenodd" d="M 424 38 L 421 40 L 420 42 L 420 48 L 420 49 L 426 50 L 428 49 L 432 45 L 432 43 L 428 39 L 426 38 Z M 195 19 L 191 20 L 185 23 L 182 25 L 175 32 L 173 35 L 170 41 L 169 44 L 169 58 L 170 60 L 171 62 L 174 65 L 174 66 L 176 68 L 179 70 L 185 74 L 190 76 L 195 79 L 202 86 L 203 88 L 204 90 L 204 99 L 203 102 L 202 104 L 195 111 L 193 112 L 191 113 L 188 114 L 178 114 L 175 113 L 173 112 L 168 107 L 167 105 L 166 103 L 166 93 L 167 90 L 170 85 L 170 83 L 165 83 L 162 85 L 160 87 L 159 89 L 158 91 L 157 94 L 157 104 L 158 107 L 160 110 L 166 116 L 168 117 L 171 118 L 174 119 L 186 119 L 190 118 L 194 117 L 196 116 L 198 115 L 201 113 L 205 110 L 206 109 L 209 105 L 212 99 L 213 96 L 213 90 L 212 86 L 211 83 L 209 80 L 202 73 L 193 67 L 190 66 L 187 64 L 184 62 L 178 56 L 177 54 L 176 51 L 176 46 L 177 42 L 179 38 L 182 32 L 187 27 L 190 25 L 192 24 L 194 23 L 197 22 L 206 22 L 208 24 L 209 27 L 208 32 L 207 36 L 204 43 L 203 48 L 203 53 L 204 55 L 208 56 L 209 54 L 212 48 L 215 39 L 215 27 L 214 24 L 210 20 L 208 19 Z M 252 18 L 244 26 L 242 29 L 238 36 L 235 42 L 230 53 L 226 65 L 223 77 L 222 83 L 221 89 L 221 107 L 222 109 L 225 109 L 227 108 L 228 107 L 228 106 L 230 104 L 233 97 L 234 92 L 236 87 L 239 81 L 241 78 L 244 75 L 247 74 L 250 75 L 252 77 L 253 80 L 253 85 L 252 90 L 250 94 L 250 102 L 251 104 L 254 107 L 262 107 L 264 106 L 266 105 L 273 98 L 275 95 L 277 92 L 283 80 L 286 71 L 287 70 L 288 68 L 294 74 L 294 81 L 289 94 L 289 97 L 288 98 L 288 100 L 289 103 L 293 107 L 301 107 L 304 106 L 306 105 L 309 102 L 310 102 L 312 100 L 316 95 L 318 97 L 318 100 L 320 104 L 322 106 L 324 107 L 330 107 L 332 106 L 335 104 L 338 101 L 338 100 L 341 97 L 342 102 L 343 104 L 346 107 L 354 107 L 357 106 L 360 104 L 365 99 L 368 94 L 369 99 L 370 102 L 371 104 L 372 106 L 373 107 L 375 108 L 378 109 L 383 109 L 387 108 L 389 107 L 391 106 L 396 102 L 400 96 L 403 96 L 404 102 L 407 105 L 409 106 L 411 107 L 414 107 L 415 106 L 419 106 L 421 105 L 423 104 L 432 95 L 435 89 L 435 87 L 436 85 L 434 86 L 434 88 L 432 91 L 429 95 L 424 100 L 422 101 L 420 102 L 418 102 L 416 103 L 414 102 L 411 99 L 411 90 L 412 86 L 413 83 L 421 68 L 422 65 L 422 62 L 420 62 L 417 63 L 415 64 L 413 65 L 412 66 L 411 68 L 408 74 L 407 77 L 407 80 L 406 83 L 405 86 L 404 88 L 402 91 L 399 95 L 395 99 L 391 102 L 385 105 L 382 105 L 380 104 L 378 102 L 377 99 L 377 87 L 378 82 L 379 77 L 380 74 L 381 71 L 382 69 L 384 67 L 389 67 L 390 66 L 392 65 L 390 65 L 389 64 L 386 61 L 386 60 L 394 59 L 399 58 L 403 57 L 406 56 L 409 52 L 407 51 L 403 50 L 394 50 L 392 48 L 393 45 L 396 38 L 395 32 L 392 32 L 387 37 L 384 44 L 382 47 L 379 50 L 374 51 L 370 51 L 369 52 L 367 52 L 370 56 L 372 57 L 377 61 L 375 61 L 375 63 L 376 64 L 376 66 L 374 70 L 372 77 L 372 81 L 371 84 L 370 87 L 368 89 L 368 91 L 366 94 L 361 99 L 357 102 L 355 103 L 352 103 L 350 101 L 350 99 L 349 97 L 350 90 L 352 84 L 356 74 L 355 70 L 351 70 L 349 72 L 346 79 L 345 84 L 341 92 L 339 95 L 333 101 L 331 102 L 328 102 L 325 99 L 325 87 L 326 84 L 327 81 L 329 78 L 331 70 L 332 68 L 329 68 L 328 67 L 324 68 L 323 70 L 321 75 L 320 78 L 319 84 L 318 87 L 317 89 L 316 91 L 314 94 L 309 99 L 306 101 L 304 102 L 302 102 L 300 103 L 297 100 L 297 97 L 302 84 L 302 75 L 301 73 L 292 65 L 290 63 L 290 54 L 288 54 L 286 55 L 285 56 L 284 58 L 285 65 L 285 67 L 284 70 L 283 74 L 280 81 L 279 83 L 274 92 L 272 95 L 264 103 L 262 104 L 260 103 L 258 101 L 257 99 L 257 97 L 258 96 L 258 93 L 260 89 L 261 84 L 261 73 L 256 68 L 248 68 L 246 69 L 244 70 L 238 76 L 236 79 L 233 85 L 231 90 L 228 93 L 229 87 L 230 80 L 231 75 L 232 72 L 245 59 L 248 55 L 251 50 L 255 42 L 258 33 L 258 21 L 257 19 Z M 255 29 L 254 32 L 252 39 L 250 43 L 246 51 L 244 54 L 242 57 L 239 61 L 236 64 L 235 62 L 236 60 L 238 57 L 239 52 L 242 45 L 243 43 L 244 41 L 247 36 L 249 33 L 251 30 Z" />
+          </svg>
+          <svg class="header-heart heart-right" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </h2>
+        <span class="chat-bot-tagline" id="chat-bot-tagline">
+          Your AI Companion
+        </span>
+      </div>
+    </header>
+
+    <!-- Chat body -->
+    <main class="chat-body" id="chat-messages" role="log" aria-live="polite" aria-label="Chat messages">
+
+      <!-- Typing indicator (hidden by default) -->
+      <div id="typing-indicator" role="status" aria-label="Bot is typing">
+        <div class="bot-avatar-dot" aria-hidden="true">
+          <img src="Shruti.jpeg" alt="Sruthi" class="avatar-img" />
+        </div>
+        <div class="typing-bubble">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Input bar -->
+    <footer class="input-section" role="contentinfo">
+      <div class="input-bar" id="input-bar-wrap">
+        <div class="input-avatar" aria-hidden="true">
+          <img src="Shruti.jpeg" alt="Sruthi" class="avatar-img" />
+        </div>
+
+        <textarea
+          id="chat-input"
+          placeholder="Tap to ask... 💬"
+          rows="1"
+          maxlength="500"
+          aria-label="Message input"
+          aria-multiline="true"
+        ></textarea>
+
+        <div class="input-actions">
+          <div class="send-btn-wrap">
+            <button id="send-btn" class="shimmer-btn" aria-label="Send message" title="Send">💕</button>
+            <span class="send-sparkle">✦</span>
+            <span class="send-sparkle-mini">✨</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+
+  <!-- ============================================================
+       SCRIPTS  (load order matters)
+       ============================================================ -->
+  <script src="animations.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Keyboard nav for topic cards -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.topic-card').forEach(card => {
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            card.click();
+          }
+        });
+      });
+      document.getElementById('menu-reset')?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') document.getElementById('menu-reset').click();
+      });
+    });
+  </script>
+
+</body>
+</html>
