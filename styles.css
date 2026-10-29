@@ -313,20 +313,21 @@ body::before {
   cursor: pointer;
   box-shadow: 0 8px 28px rgba(255, 64, 113, 0.55);
   letter-spacing: 0.3px;
-  transition: transform 0.2s, box-shadow 0.3s, filter 0.2s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: box-shadow 0.3s ease, filter 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .lets-chat-btn:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.08);
-  box-shadow: 0 12px 35px rgba(255, 64, 113, 0.75);
+  filter: brightness(1.12);
+  box-shadow: 0 12px 35px rgba(255, 64, 113, 0.85);
 }
 
 .lets-chat-btn:active {
-  transform: translateY(0) scale(0.98);
   filter: brightness(0.96);
 }
 
